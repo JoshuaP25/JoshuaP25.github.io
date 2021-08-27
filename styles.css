@@ -1,0 +1,530 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #040B25;
+    color: #F5F5F5;
+    height: 80px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #FF8000;
+}
+
+.logo {
+    font-size: 1.25rem;
+    margin-left: 30px;
+}
+
+.links {
+    display: flex;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.links li a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.links li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FF8000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.links li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.active {
+    color: #FF8000;
+}
+
+.menu div {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #FF8000;
+    margin: 6px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .menu div {
+        display: block;
+        margin-right: 20px;
+    }
+    .links ul {
+        display: none;
+    }
+}
+
+/* Header */
+
+header {
+    background-image: url("./images/geometricbg.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: whitesmoke;
+}
+
+.overlay {
+    margin: 0 50px;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.overlay::before {
+    content: " ";
+    z-index: 1;
+    display: block;
+    position: absolute;   
+    height: 80vh;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay * {
+    position: relative; /* Makes elements display above overlay. */
+}
+
+.intro {
+    padding: 10px;
+    line-height: 1.2;
+    z-index: 1;
+    text-align: left;
+}
+
+.intro span {
+    font-size: 1.5rem;
+}
+
+span h1 {
+    color: #FF8000;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    margin-right: 30px;
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.social-icons a {
+    color: whitesmoke;
+}
+
+.profile-1 {
+    display: none;
+    z-index: 1;
+}
+
+.profile-2 {
+    z-index: 1;
+}
+
+.p-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+
+    .p-container img {
+        width: 200px;
+        margin-bottom: -50px;
+    }
+    .intr {
+        padding: 0;
+    }
+    .intro span {
+        font-size: 1.25rem;
+    }
+}
+
+/* Main */
+
+.container {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* About Me */
+
+.skills {
+    margin-top: 30px;
+}
+
+strong {
+    font-size: 1.25rem;
+}
+
+.skills ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.skills ul li {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.box img {
+    width: 30%;
+    height: 300px;
+    border-radius: 5px;
+    flex-grow: 2;
+}
+
+.box p {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .box img {
+        max-width: 100%;
+    }
+    .box p {
+        width: 100%;
+    }
+}
+
+/* Projects */
+
+/* Web Dev */
+
+h3 {
+    font-size: 1.4rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.web-dev {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.img-container {
+    width: 400px;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    margin: 30px 10px 130px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px grey;
+}
+
+#project-1 {
+    background-image: url("./images/thegamersclub.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#project-2 {
+    background-image: url("./images/digitalconsultancy.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#project-3 {
+    background-image: url("./images/teacozy.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#project-4 {
+    background-image: url("./images/htmlcheatsheet.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#project-5 {
+    background-image: url("./images/quotes.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#project-6 {
+    background-image: url("./images/webdesignsystem.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+.description {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.description p {
+    margin: 10px 0 5px 0;
+}
+
+.description a {
+    display: inline-block;
+    padding: 7px 50px;
+    color: #FF8000;
+}
+
+.description a:hover {
+    color: #c96400;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .description {
+        top: 90px;
+    }
+    .description p {
+        visibility: hidden;
+    }
+    .description a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Graphic Design */
+
+.graphic-design {
+    margin: 20px 10px;
+}
+
+.design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.design-container {
+    width: 350px;
+    min-height: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.caption {
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+#mobileLegends {
+    background-image: url("./images/mobileLegendsWallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#callOfDuty {
+    background-image: url("./images/codbanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#janeDeleon {
+    background-image: url("./images/janeDeleonVexel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#productDesign-1 {
+    background-image: url("./images/camoteChips.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#productDesign-2 {
+    background-image: url("./images/bananaChips.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#productDesign-3 {
+    background-image: url("./images/taroChips.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#spiderMan {
+    background-image: url("./images/SpiderManInv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#ironMan {
+    background-image: url("./images/ironmanshirt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+#kobe {
+    background-image: url("./images/kobeshirt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+/* Contacts */
+
+.contacts {
+    background-color: #040B25;
+    color: whitesmoke;
+    text-align: center;
+    padding: 30px;
+
+}
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.socials span {
+    font-size: 1.25rem;
+    padding: 10px 0;
+}
+
+.socials a {
+    margin: 0 20px;
+    font-size: 1.25rem;
+    color: #FF8000;
+}
+
+@media screen and (max-width: 480px) {
+    .socials span {
+        font-size: 1.125rem;
+    }
+}
+
+footer {
+    background-color: #040B25;
+    color: whitesmoke;
+    border-top: 1px solid #FF8000;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
