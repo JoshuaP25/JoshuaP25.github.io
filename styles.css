@@ -145,13 +145,17 @@ span h1 {
 
 .social-icons {
     display: flex;
+    align-items: center;
     margin-top: 10px;
 }
 
 .social-icons li {
-    margin-right: 30px;
     list-style: none;
     font-size: 2.5rem;
+}
+
+.social-icons li:nth-child(1), .social-icons li:nth-child(2) {
+    margin-right: 30px;
 }
 
 .social-icons a {
@@ -218,7 +222,7 @@ strong {
 
 .skills ul {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .skills ul li {
@@ -263,8 +267,16 @@ strong {
 
 h3 {
     font-size: 1.4rem;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
+}
+
+.github, .behance {
+    color: #FF8000;
+}
+
+.github:after, .behance:after {
+    color: #FF8000;
 }
 
 .web-dev {
@@ -371,7 +383,12 @@ h3 {
 /* Graphic Design */
 
 .graphic-design {
-    margin: 20px 10px;
+    margin: 10px 10px;
+}
+
+.graphic-design p {
+    width: 90%;
+    margin: 15px auto;
 }
 
 .design {
@@ -379,7 +396,6 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
 }
 
 .design-container {
@@ -527,4 +543,8 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+footer a {
+    color: #FF8000;
 }

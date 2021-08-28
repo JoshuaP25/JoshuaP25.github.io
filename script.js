@@ -16,7 +16,7 @@ function display(x) {
     }
 }
 
-let x = window.matchMedia("(max-width: 826px)");
+let x = window.matchMedia("(max-width: 790px)");
 display(x);
 x.addListener(display);
 
