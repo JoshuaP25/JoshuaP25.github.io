@@ -31,6 +31,9 @@ nav {
 .logo {
     font-size: 1.25rem;
     margin-left: 30px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #fbfcfd;
 }
 
 .links {
@@ -45,7 +48,8 @@ nav {
 }
 
 .links li a {
-    color: whitesmoke;
+    color: #fbfcfd;
+    font-size: 1rem;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -194,7 +198,7 @@ span h1 {
 /* Main */
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 90px auto;
     padding: 0 20px;
 }
@@ -204,62 +208,36 @@ h2 {
     margin-bottom: 30px;
 }
 
-p {
+/* About Me */
+
+#about-me p {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.4;
 }
 
-/* About Me */
-
 .skills {
     margin-top: 30px;
 }
 
-strong {
-    font-size: 1.25rem;
+.skill-heading {
+    text-align: left;
 }
 
-.skills ul {
-    margin-top: 10px;
-    margin-left: 30px;
-}
-
-.skills ul li {
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
-.box {
+.icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
     align-items: center;
-    justify-content: center;
-    margin: 40px 0;
 }
 
-.box img {
-    width: 30%;
-    height: 300px;
-    border-radius: 5px;
-    flex-grow: 2;
+.icons li {
+    font-size: 1.25rem;
+    font-weight: 500;
+    list-style: none;
+    margin-right: 20px;
 }
 
-.box p {
-    width: 40%;
-    padding: 20px;
-    text-align: center;
-    flex-grow: 1;
-}
-
-@media screen and (max-width: 480px) {
-    .box img {
-        max-width: 100%;
-    }
-    .box p {
-        width: 100%;
-    }
-}
 
 /* Projects */
 
@@ -279,20 +257,35 @@ h3 {
     color: #FF8000;
 }
 
+#works p {
+    font-size: 1.25rem;
+}
+
 .web-dev {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    display: inline-block;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    margin: 20px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px grey;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .img-container {
-    width: 400px;
-    min-height: 300px;
+    max-width: 380px;
+    min-height: 250px;
     display: flex;
     align-items: flex-end;
-    margin: 30px 10px 130px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 15px grey;
+    margin-bottom: 200px;
+    /* border-radius: 5px; */
 }
 
 #project-1 {
@@ -300,7 +293,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
 }
 
 #project-2 {
@@ -308,7 +300,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
 }
 
 #project-3 {
@@ -316,7 +307,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
 }
 
 #project-4 {
@@ -324,7 +314,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
 }
 
 #project-5 {
@@ -332,7 +321,6 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
 }
 
 #project-6 {
@@ -340,43 +328,47 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
 }
 
 .description {
     width: 100%;
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 160px;
     font-size: 1.125rem;
-    font-weight: 600;
 }
 
 .description p {
     margin: 10px 0 5px 0;
+    padding: 20px 10px;
+    border-bottom: 1px solid #c96400;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
 .description a {
     display: inline-block;
-    padding: 7px 50px;
+    padding: 20px 30px;
     color: #FF8000;
+    font-size: 1.125rem;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .description a:hover {
     color: #c96400;
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
-    
+@media only screen and (max-width: 380px) {
     .description {
-        top: 90px;
+        top: 190px;
     }
-    .description p {
-        visibility: hidden;
-    }
+}
+
+@media only screen and (max-width: 480px) {
     .description a {
-        display: block;
-        margin: 5px 0;
+        padding: 10px 20px;
     }
 }
 
@@ -389,6 +381,8 @@ h3 {
 .graphic-design p {
     width: 90%;
     margin: 15px auto;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .design {
@@ -418,6 +412,7 @@ h3 {
     padding: 15px 0;
     font-size: 1.125rem;
     font-weight: 500;
+    text-align: center;
 }
 
 #mobileLegends {
@@ -508,26 +503,37 @@ h4 {
 }
 
 .socials {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     cursor: pointer;
     text-align: center;
+}
+
+.socials ul li {
+    display: inline-block;
+    list-style: none;
 }
 
 .socials span {
     font-size: 1.25rem;
     padding: 10px 0;
+    margin: 20px 0;
 }
 
 .socials a {
+    display: inline-block;
     margin: 0 20px;
+    margin-bottom: 20px;
     font-size: 1.25rem;
     color: #FF8000;
 }
 
 @media screen and (max-width: 480px) {
+    .socials a {
+        display: block;
+    }
     .socials span {
         font-size: 1.125rem;
     }
