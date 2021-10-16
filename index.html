@@ -8,27 +8,26 @@
     <script src="https://kit.fontawesome.com/624ba2a387.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css" type="text/css">
     <script src="./script.js" async></script>
-    <script src="./viewImg.js" defer></script>
+    <script src="./navbar.js" async></script>
+    <script src="./image-carousel.js" defer></script>
     <title>Joshua</title>
 </head>
 <body>
     
     <nav>
         <div class="logo">
-            <span>Josh</span>
+            <img src="./images/logo.png" alt="Logo Image">
         </div>
-        <div class="links">
-            <ul>
-                <li><a href="#about-me" class="active">Who am I</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-            <div class="menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
+        <ul class="nav-links">
+            <li><a href="#about-me" class="active">About Me</a></li>
+            <li><a href="#works">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
     </nav>
 
     <header>
@@ -71,9 +70,8 @@
                     <li><img src="./images/illustrator-icon.png" alt="illustrator icon"></li>
                 </ul>
             </div>
-            
         </div>
-        <div id="works" class="container">
+        <div id="works" class="web">
             <h2>Projects</h2>
             <h3>Web Development</h3>
             <p>This responsive websites are created using HTML, CSS and Javascript. You can follow me on my Github <a href="https://github.com/JoshuaP25" class="github">JoshuaP25</a> for future uploads.</p>
@@ -136,64 +134,46 @@
         </div>
         <div class="graphic-design">
             <h3>Graphic Design</h3>
-            <p>Using Adobe Illustrator and Adobe Photoshop I created all of this designs. Some of it is made for client. You can follow me on my Behance <a href="https://www.behance.net/joshuaperez25" class="behance">joshuaperez25</a> for more updates</p>
-            <div class="design">
-                <div class="design-container" id="mobileLegends">
-                    <div class="caption">
-                        <p>Mobile Legends Wallpaper</p>
-                    </div>
+            <p>Using Adobe Illustrator and Adobe Photoshop I created all of this designs. Some of it is made for client. You can follow me on my Behance <a href="https://www.behance.net/joshuaperez25" class="behance">joshuaperez25</a> for more updates.</p>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="./images/mobileLegendsWallpaper.png">
                 </div>
-                <div class="design-container" id="spiderMan">
-                    <div class="caption">
-                        <p>Spider Man Invitation Card</p>
-                    </div>
+                <div class="mySlides fade">
+                    <img src="./images/codbanner.png">
                 </div>
-                <div class="design-container" id="callOfDuty">
-                    <div class="caption">
-                        <p>Call Of Duty Birthday Banner</p>
-                    </div>
+                <div class="mySlides fade">
+                    <img src="./images/SpiderManInv.jpg">
                 </div>
-                <div class="design-container" id="productDesign-1">
-                    <div class="caption">
-                        <p>Product Design 1</p>
-                    </div>
+                <div class="mySlides fade">
+                    <img src="./images/ironmanshirt.png">
                 </div>
-                <div class="design-container" id="productDesign-2">
-                    <div class="caption">
-                        <p>Product Design 2</p>
-                    </div>
+                <div class="mySlides fade">
+                    <img src="./images/kobeshirt.png">
                 </div>
-                <div class="design-container" id="productDesign-3">
-                    <div class="caption">
-                        <p>Product Design 3</p>
-                    </div>
-                </div>
-                <div class="design-container" id="janeDeleon">
-                    <div class="caption">
-                        <p>Jane De Leon Vexel Art</p>
-                    </div>
-                </div>
-                <div class="design-container" id="ironMan">
-                    <div class="caption">
-                        <p>Iron Man On T-Shirt</p>
-                    </div>
-                </div>
-                <div class="design-container" id="kobe">
-                    <div class="caption">
-                        <p>Kobe Bryant On T-Shirt</p>
-                    </div>
+                <div class="mySlides fade">
+                    <img src="./images/janeDeleonVexel.jpg">
                 </div>
             </div>
         </div>
     </main>
     <section class="contacts" id="contacts">
-        <h4>Get in touch</h4>
+        <h3>Contacts</h3>
         <div class="socials">
-            <ul>
-                <li><span>Email:<a href="mailto:perez_joshua76@yahoo.com">Send me an email</a></span></li>
+            <!-- <ul>
+                <li><span>Email: perez_joshua76@yahoo.com</span></li>
                 <li><span>Github:<a href="https://github.com/JoshuaP25">JoshuaP25</a></span></li>
                 <li><span>LinkedIn:<a href="https://www.linkedin.com/in/joshua-perez-250aa818b/">Joshua Perez</a></span></li>
-            </ul>   
+            </ul>    -->
+            <address>
+                Email: <a href="mailto:perez_joshua76@yahoo.com">Joshua Perez</a><br> 
+                LinkedIn: <a href="https://www.linkedin.com/in/joshua-perez-250aa818b/">Joshua Perez</a><br>
+                Github: <a href="https://github.com/JoshuaP25">JoshuaP25</a><br>
+                Pangasinan, Philippines
+            </address>
         </div>
     </section>
 
