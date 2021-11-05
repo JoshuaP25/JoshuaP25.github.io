@@ -29,10 +29,16 @@ h3 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.4;
     font-weight: 400;
     margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+        font-size: 1rem;
+    }
 }
 
 /* Nav */
@@ -48,15 +54,23 @@ nav {
 }
 
 /*Styling logo*/
-.logo{
+.logo {
     padding:1vh 1vw;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
-.logo img {
+.logo strong {
     height: 3rem;
     width: 5rem;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.logo span {
+    color: #FF8000;
 }
 
 /*Styling Links*/
@@ -408,35 +422,42 @@ span h1 {
 }
 
 #project-4 {
-    background-image: url("./images/digitalconsultancy.PNG");
+    background-image: url("./images/urlshortenerapp.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-5 {
-    background-image: url("./images/teacozy.PNG");
+    background-image: url("./images/bmicalculatorapp.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-6 {
-    background-image: url("./images/htmlcheatsheet.PNG");
+    background-image: url("./images/grocerylist.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-7 {
-    background-image: url("./images/quotes.PNG");
+    background-image: url("./images/digitalconsultancy.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-8 {
-    background-image: url("./images/webdesignsystem.PNG");
+    background-image: url("./images/teacozy.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#project-9 {
+    background-image: url("./images/htmlcheatsheet.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
