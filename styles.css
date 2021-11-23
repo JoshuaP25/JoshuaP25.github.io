@@ -15,17 +15,17 @@ body {
 
 /* Globals */
 h2 {
-    /* font-size: 1.6rem; */
+    font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 h3 {
-    /* font-size: 1.3rem; */
+    font-size: 1.3rem;
     margin: 0 0 20px;
     text-align: center;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 p {
@@ -94,7 +94,7 @@ nav {
 .nav-links li {
     position: relative;
 }
-.nav-links li a::before {
+.nav-links li a::after {
     content: "";
     display: block;
     height: 3px;
@@ -104,7 +104,7 @@ nav {
     transition: all ease-in-out 250ms;
     margin: 0 0 0 10%;
 }
-.nav-links li a:hover::before{
+.nav-links li a:hover::after{
     width: 80%;
 }
 
@@ -377,7 +377,7 @@ span h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -415,49 +415,49 @@ span h1 {
 }
 
 #project-3 {
-    background-image: url("./images/thegamersclub.PNG");
+    background-image: url("./images/appointmentplanner.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-4 {
-    background-image: url("./images/urlshortenerapp.PNG");
+    background-image: url("./images/thegamersclub.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-5 {
-    background-image: url("./images/bmicalculatorapp.PNG");
+    background-image: url("./images/urlshortenerapp.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-6 {
-    background-image: url("./images/grocerylist.PNG");
+    background-image: url("./images/bmicalculatorapp.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-7 {
-    background-image: url("./images/digitalconsultancy.PNG");
+    background-image: url("./images/grocerylist.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-8 {
-    background-image: url("./images/teacozy.PNG");
+    background-image: url("./images/digitalconsultancy.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #project-9 {
-    background-image: url("./images/htmlcheatsheet.PNG");
+    background-image: url("./images/teacozy.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -597,20 +597,27 @@ span h1 {
 }
 
 .socials {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     text-align: center;
 }
 
+.socials span {
+    margin: 20px;
+}
+
 .socials a {
-    display: inline-block;
-    margin: 0 20px;
-    margin-bottom: 20px;
+    margin: 0 10px;
     font-size: 1rem;
     color: #FF8000;
 }
 
 @media screen and (max-width: 480px) {
+    .socials {
+        flex-direction: column;
+    }
     .socials a {
         display: block;
     }
