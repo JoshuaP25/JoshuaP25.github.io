@@ -15,7 +15,7 @@ body {
 
 /* Globals */
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -39,6 +39,11 @@ p {
     p {
         font-size: 1rem;
     }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
 }
 
 /* Nav */
