@@ -41,7 +41,7 @@ p {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
 }
@@ -389,7 +389,7 @@ span h1 {
     display: inline-block;
     flex-wrap: wrap;
     background-color: whitesmoke;
-    margin: 25px 10px;
+    margin: 25px 15px;
     border-radius: 5px;
     box-shadow: 0 0 15px grey;
     flex-wrap: wrap;
