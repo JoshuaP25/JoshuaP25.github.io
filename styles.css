@@ -10,19 +10,18 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 /* Globals */
 h2 {
     font-size: 1.8rem;
-    margin-bottom: 20px;
     font-weight: 600;
 }
 
 h3 {
     font-size: 1.3rem;
-    margin: 0 0 20px;
+    margin: 30px 0 20px;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
@@ -207,13 +206,13 @@ header {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 88vh;
     color: whitesmoke;
 }
 
 .overlay {
     margin: 0 50px;
-    height: 80vh;
+    height: 88vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -225,7 +224,7 @@ header {
     z-index: 1;
     display: block;
     position: absolute;   
-    height: 80vh;
+    height: 88vh;
     /* top: 80px; */
     left: 0;
     width: 100%;
@@ -307,14 +306,17 @@ span h1 {
 
 .container {
     max-width: 900px;
-    margin: 50px auto;
-    padding: 0 20px;
+    margin: 100px auto;
+    padding: 20px;
 }
 
 /* About Me */
+#about-me h2 {
+    margin-bottom: 30px;
+}
 
 .skills {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .skill-heading {
@@ -342,7 +344,7 @@ span h1 {
 @media only screen and (max-width: 480px) {
     .container {
         position: relative;
-        padding-top: 70px;
+        padding-top: 100px;
         text-align: left;
     }
     .skill-heading {
@@ -592,42 +594,86 @@ span h1 {
 }
 
 /* Contacts */
-
-.contacts {
+#contacts {
     background-color: #040B25;
-    color: whitesmoke;
-    text-align: center;
-    padding: 30px;
-
+    color: white;
+    padding: 50px 0;
 }
 
-.socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+#contacts h2 {
     text-align: center;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.contacts .socials {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.socials em {
+    padding: 15px 0;
 }
 
 .socials span {
-    margin: 20px;
+    font-size: 1.5rem;
+    margin-right: 15px;
 }
 
-.socials a {
-    margin: 0 10px;
-    font-size: 1rem;
+.socials em .fas {
     color: #FF8000;
 }
 
-@media screen and (max-width: 480px) {
-    .socials {
+.message h4 {
+    margin-bottom: 10px;
+}
+
+.message form {
+    display: flex;
+    flex-direction: column;
+}
+
+.message input {
+    width: 500px;
+    height: 20px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.message input[type="submit"] {
+    width: 150px;
+    height: 50px;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #FF8000;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .contacts {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-    .socials a {
-        display: block;
+
+    .message form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .socials span {
-        font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .message input {
+        width: 250px;
     }
 }
 
@@ -636,13 +682,23 @@ footer {
     color: whitesmoke;
     border-top: 1px solid #FF8000;
     text-align: center;
-    padding: 20px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social {
+    margin-bottom: 15px;
+}
+
+footer .social a {
+    font-size: 1.75rem;
+    margin: 0 5px;
+    color: #FF8000;
 }
 
 footer p {
-    font-size: .8rem;
-}
-
-footer a {
-    color: #FF8000;
+    font-size: .9rem;
 }
