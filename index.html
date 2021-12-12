@@ -61,7 +61,7 @@
         <div id="about-me" class="container">
             <h2>About Me</h2>
             <p>I worked as a full-time Graphic Artist before for a clothing company, developed creative designs for sublimation jerseys and shirts using Adobe Illustrator. I learned a lot on my previous job, I learned how to use Adobe Illustrator and on how to operate a machine for printing. I also experienced working under pressure, working overtime and handling clients.</p>
-            <p>Right now, I am learning to build responsive web applications using JavaScript and React. And also improving my design skills creating designs for web using Figma and Adobe Illustrator. My goal is to become part of a company where I can apply and enchance my skills and abilities.</p>
+            <p>Right now, I am learning to build responsive web applications using JavaScript and React. And also improving my design skills creating designs for web using Figma and Adobe Illustrator.</p>
             <div class="skills">
                 <h3 class="skill-heading">Skills</h3>
                 <ul class="icons">
@@ -75,12 +75,13 @@
         </div>
         <div id="works" class="web">
             <h2>Projects</h2>
-            <h3>Web Development</h3>
+            <h3>Webpages and Web Apps</h3>
+            <p>I recently took Codecademy Full Stack Course and this projects are the requirements in order to finish the course.</p>
             <div class="web-dev">
                 <div class="card">
                     <div class="img-container" id="project-1">
                         <div class="description">
-                            <p>Jammming is a web app that saves playlist of tracks to Spotify.</p>
+                            <p>Jammming is a web app that uses Spotify API. It can search for a track, create paylist and save created playlist to Spotify account.</p>
                             <div class="tools">
                                 <div class="tool">
                                     <span>Tools Used:</span>
@@ -112,7 +113,7 @@
                 <div class="card">
                     <div class="img-container" id="project-3">
                         <div class="description">
-                            <p>A web app that saves contacts and create an appointment.</p>
+                            <p>Appointment Planner is web app that saves contacts and create appointments.</p>
                             <div class="tools">
                                 <div class="tool">
                                     <span>Tools Used:</span>
@@ -128,7 +129,7 @@
                 <div class="card">
                     <div class="img-container" id="project-4">
                         <div class="description">
-                            <p>The Gamer's Club is a landing page I created for gamers.</p>
+                            <p>The Gamer's Club is a front-end webpage developed using flexbox.</p>
                             <div class="tools">
                                 <div class="tool">
                                     <span>Tools Used:</span>
@@ -146,7 +147,7 @@
                 <div class="card">
                     <div class="img-container" id="project-5">
                         <div class="description">
-                            <p>This web app help you shorten long and complicated URL. It uses Rebrandly API.</p>
+                            <p>Url Shortener is a web app that helps you shorten long and complicated URL. It uses Rebrandly API.</p>
                             <div class="tools">
                                 <div class="tool">
                                     <span>Tools Used:</span>
@@ -162,45 +163,9 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="img-container" id="project-6">
-                        <div class="description">
-                            <p>A web app that helps you calculate your Body Mass Index.</p>
-                            <div class="tools">
-                                <div class="tool">
-                                    <span>Tools Used:</span>
-                                    <ul>
-                                        <li><img src="./images/html-icon.png" alt="" /></li>
-                                        <li><img src="./images/css-icon.png" alt="" /></li>
-                                        <li><img src="./images/javascript-icon.png" alt="" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="https://joshuap25.github.io/bmi-calculator/" target="_blank">Live Preview <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="img-container" id="project-7">
-                        <div class="description">
-                            <p>This web app helps list all your grocery using your phone.</p>
-                            <div class="tools">
-                                <div class="tool">
-                                    <span>Tools Used:</span>
-                                    <ul>
-                                        <li><img src="./images/html-icon.png" alt="" /></li>
-                                        <li><img src="./images/css-icon.png" alt="" /></li>
-                                        <li><img src="./images/javascript-icon.png" alt="" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a href="https://joshuap25.github.io/grocery-list/" target="_blank">Live Preview <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
                     <div class="img-container" id="project-8">
                         <div class="description">
-                            <p>This page is made of grid. I create this website to experiment on grid layouts.</p>
+                            <p>This webpage is made of grid. I developed this webpage to practice on grid layouts.</p>
                             <div class="tools">
                                 <div class="tool">
                                     <span>Tools Used:</span>
@@ -217,7 +182,7 @@
                 <div class="card">
                     <div class="img-container" id="project-9">
                         <div class="description">
-                            <p>This is my first flexbox website I created and it's all about tea.</p>
+                            <p>Tea Cozy is a simple responsive webpage featuring different kinds of tea.</p>
                             <div class="tools">
                                 <div class="tool">
                                     <span>Tools Used:</span>
@@ -270,11 +235,11 @@
             </div>
             <div class="message">
                 <h4>Send me a message</h4>
-                <form action="index.html">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="text" placeholder="Message" />
-                    <input type="submit" class="submit" value="Send" />
+                <form name="contact" method="POST" data-netlify="true">
+                      <input type="text" name="name" placeholder="Name"/>   
+                      <input type="email" name="email" placeholder="Email"/>
+                      <textarea name="message" rows="10" cols="30" placeholder="Message"></textarea>
+                      <button type="submit">Send</button>
                 </form>
             </div>
         </div>
