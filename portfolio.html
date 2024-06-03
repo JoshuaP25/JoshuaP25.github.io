@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="/portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js" defer></script>
+  <script src="./modal.js" defer></script>
+  <script src="./slider.js" defer></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <!--First Column-->
+    <section class="left-panel">
+      <div class="top">
+        <img src="./images/profile.jpeg" width="160px" height="160px" alt="profile">
+        <h2 class="name">Joshua Perez</h3>
+          <p class="job">Software Developer</p>
+      </div>
+      <hr class="partition">
+      <div class="middle">
+        <ul class="contacts">
+          <li class="contact-box">
+            <img src="./images/mail.png" alt="">
+            <div class="contact-details">
+              <p>Email</p>
+              <p>joshvperez@gmail.com</p>
+            </div>
+          </li>
+          <li class="contact-box">
+            <img src="./images/smartphone.png" alt="">
+            <div class="contact-details">
+              <p>Phone</p>
+              <p>+639469557593</p>
+            </div>
+          </li>
+          <li class="contact-box">
+            <img src="./images/pin.png" alt="">
+            <div class="contact-details">
+              <p>Location</p>
+              <p>Pangasinan, Philippines</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <img src="./images/facebook-icon.png" alt="">
+        <img src="./images/facebook-icon.png" alt="">
+        <img src="./images/facebook-icon.png" alt="">
+      </div>
+    </section>
+    <nav class="mobile-nav">
+      <ul class="menu">
+        <li><a href="/">About</a></li>
+        <li><a href="/portfolio.html">Portfolio</a></li>
+        <li>Resume</li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!--Second Column-->
+    <main class="main-panel">
+      <nav>
+        <ul class="menu">
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li>Resume</li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="main-content">
+        <h2 class="page-title">Portfolio</h2>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('webdev')"> Web Development</button>
+          <button class="btn" onclick="filterSelection('maintenance')"> Web Maintenance</button>
+          <button class="btn" onclick="filterSelection('graphics')">Web & Graphic Design</button>
+        </div>
+
+        <div class="row">
+          <div class="column maintenance">
+            <a href="#popup1">
+              <div class="content">
+                <img src="./images/Potato Corner/PC.png" alt="Potato Corner" class="content-img" style="width:100%">
+                <h4>Potato Corner</h4>
+                <p>Web Maintenance</p>
+                <div id="popup1" class="overlay popup">
+                  <div class="additional-info">
+                    <a class="close" href="#section">&times;</a>
+                    <div class="info-card">
+                      <img src="./images/Potato Corner/PC.png" class="cover-pic" alt="Potato Corner">
+                      <div class="info-text">
+                        <h1>Potato Corner</h1>
+                        <p class="role"><b>Role: Web Developer</b></p>
+                        <p>Potato Corner is a global Philippine food franchise known for its flavored French fries. I'm
+                          responsible in maintaining and monitoring Potato Corner website. Aside from updating themes,
+                          plugins, WordPress version and PHP version, I'm also responsible in updating contents, fixing
+                          technical issues, optimizing performance, implementing security issues and adding features to
+                          the
+                          website.</p>
+                        <ul class="softwares">
+                          <li>
+                            <img src="./images/wordpress-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/elementor.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/php.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/css-3.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/js-logo.png" alt="html">
+                          </li>
+                        </ul>
+                        <a href="https://www.google.com/" class="website-links">Click here</a>
+                      </div>
+                    </div>
+                    <div class="more-info">
+                      <h2>Changes made in Potato Corner website</h2>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/Potato Corner/Events Page.png" alt="Los Angeles" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Potato Corner/Package Page.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Potato Corner/Booking Submission.png" alt="New York"
+                                class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <h3>Events Page Layout and Booking Form Development</h3>
+                          <p>Potato Corner wants to promote their events packages: 'Regular Package' and 'Large Package'
+                            with additional offer that includes new products. By clicking on your selected package will
+                            redirect you to your selected package page then if you click 'Book Now' it will redirect you
+                            again to a booking form where you enter your contact information and event information.
+                            After
+                            they send me the mockup design for this layout to imitate I gather all the requirements and
+                            started to develop the following update. It's a bit challenge for me to layout the Events
+                            page because I have to
+                            imitate the mockup design at the same time it should be responsive in all devices. I used
+                            Caldera Forms for creating the booking form, Elementor and CSS for creating the layout of
+                            the pages
+                            and JavaScipt for displaying selected package in booking form.</p>
+                        </div>
+                      </div>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/Potato Corner/Franchising Page.png" alt="Franchising Page"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Potato Corner/Internation Franchising Page.png"
+                                alt="International Franchising" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Potato Corner/Application Form.png" alt="Application Form"
+                                class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <h3>Franchising Page and Application Form</h3>
+                          <p>Potato Corner wants to integrate an Application Form for International Franchisees. Using
+                            Caldera Forms, Elementor and CSS, I was able to accomplish the Application Form that they
+                            want. Click <a href="https://potatocorner.com/franchising/">here</a> to visit Potato Corner
+                            Franchising Page.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column webdev">
+            <a href="#popup2">
+              <div class="content">
+                <img src="./images/Huddleroom/Huddleroom.png" alt="The Huddle Room" class="content-img"
+                  style="width:100%">
+                <h4>The Huddle Room</h4>
+                <p>Web Development</p>
+                <div id="popup2" class="overlay popup">
+                  <div class="additional-info">
+                    <a class="close" href="#section">&times;</a>
+                    <div class="info-card">
+                      <img src="./images/Huddleroom/Huddleroom.png" class="cover-pic" alt="The Huddle Room">
+                      <div class="info-text">
+                        <h1>Huddle Room</h1>
+                        <p class="role"><b>Role: Web Developer</b></p>
+                        <p>The Huddle Room is the country's premier growth agency. This is my first major project for
+                          our company that was published live. I have fun, and I learn a lot from making this website,
+                          as it challenges me to make an extra effort, especially since the website has a lot of
+                          animations going on.
+                        </p>
+                        <ul class="softwares">
+                          <li>
+                            <img src="./images/wordpress-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/elementor.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/js-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/css-3.png" alt="html">
+                          </li>
+                        </ul>
+                        <a href="https://www.google.com/" class="website-links">Click here</a>
+                      </div>
+                    </div>
+                    <div class="info-details">
+                      <div class="info-features">
+                        <h2>Features</h2>
+                        <ul class="feature-lists">
+                          <li>Vertical Slider for Awards Page</li>
+                          <li>Animated Preloader</li>
+                          <li>Services Modal</li>
+                          <li>Contact Forms Modal</li>
+                          <li>Our Clients On-Hover Logo Animation</li>
+                          <li>Animated Mascots On-Hover</li>
+                        </ul>
+                      </div>
+                      <div class="fonts-colors-used">
+                        <h2>Fonts & Colors Used</h2>
+                        <p>Font: <strong>Avenir Next Lt Pro</strong></p>
+                        <ul class="color-lists">
+                          <li class="color-info">
+                            <p>Primary</p>
+                            <div class="circle primary-color" style="background-color: #FF6309;"></div>
+                            <p class="hex">#FF6309</p>
+                          </li>
+                          <li class="color-info">
+                            <p>Secondary</p>
+                            <div class="circle secondary-color" style="background-color: #2C2C2C;"></div>
+                            <p class="hex">#2C2C2C</p>
+                          </li>
+                          <li class="color-info">
+                            <p>Tertiary</p>
+                            <div class="circle tertiary-color" style="background-color: #F0F0F0;"></div>
+                            <p class="hex">#F0F0F0</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="more-info">
+                      <h2>Some of the features I made for the Huddle Room website</h2>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <!-- <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button> -->
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/Huddleroom/thr_slider_desktop.png" alt="Los Angeles"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Huddleroom/thr_slider_mobile.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <h3>Awards Slider</h3>
+                          <p>This slider was made to showcase their awards from every year to show how outstanding
+                            they are. It was made using JavaScript in order to make it work, HTML and CSS for creating
+                            the layout and for responsiveness on all devices. The layouting part is a challenge for me
+                            because it needs to be resposive to make it beautiful in all devices.</p>
+                        </div>
+                      </div>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo4" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <!-- <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button> -->
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/Huddleroom/services.png" alt="Los Angeles" class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button> -->
+                        </div>
+                        <div class="slides-details">
+                          <h3>We Advocate Growth Modal</h3>
+                          <p>This modal was made to show what they're capable of doing. It was made with using a plugin,
+                            'Premium Addons for Elementor' with a touch of JavaScript.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column webdev">
+            <a href="#popup3">
+              <div class="content">
+                <img src="./images/All Star/All Star.png" alt="All Star" class="content-img" style="width:100%">
+                <h4>All-Star Magazine</h4>
+                <p>Web Development</p>
+                <div id="popup3" class="overlay popup">
+                  <div class="additional-info">
+                    <a class="close" href="#section">&times;</a>
+                    <div class="info-card">
+                      <img src="./images/All Star/All Star.png" class="cover-pic" alt="All Star">
+                      <div class="info-text">
+                        <h1>All-Star Magazine</h1>
+                        <p class="role"><b>Role: Web Developer</b></p>
+                        <p>A world-class media platform that was created to serve and to champion the Filipino sports
+                          community. My boss, who is also the founder of this website, and I collaborated closely
+                          throughout the entire development process, pooling our expertise and resources to create a
+                          product we're both proud of. </p>
+                        <ul class="softwares">
+                          <li>
+                            <img src="./images/wordpress-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/elementor.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/php.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/js-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/css-3.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/google-analytics.png" alt="html">
+                          </li>
+                        </ul>
+                        <a href="https://www.google.com/" class="website-links">Click here</a>
+                      </div>
+                    </div>
+                    <div class="info-details">
+                      <div class="info-features">
+                        <h2>Features</h2>
+                        <ul class="feature-lists">
+                          <li>Homepage Slider</li>
+                          <li>YouTube Featured Video</li>
+                          <li>Auto Load Posts</li>
+                          <li>Share Article to Social Media</li>
+                          <li>Grid Module Category Posts</li>
+                          <li>Post Video Block</li>
+                        </ul>
+                      </div>
+                      <div class="fonts-colors-used">
+                        <h2>Fonts & Colors Used</h2>
+                        <p>Font: <strong>Avenir Next Lt Pro</strong></p>
+                        <ul class="color-lists">
+                          <li class="color-info">
+                            <p>Primary</p>
+                            <div class="circle primary-color" style="background-color: #27272A;"></div>
+                            <p class="hex">#27272A</p>
+                          </li>
+                          <li class="color-info">
+                            <p>Secondary</p>
+                            <div class="circle secondary-color" style="background-color: #F5F9FF;"></div>
+                            <p class="hex">#F5F9FF</p>
+                          </li>
+                          <li class="color-info">
+                            <p>Tertiary</p>
+                            <div class="circle tertiary-color" style="background-color: #111111;"></div>
+                            <p class="hex">#111111</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="more-info">
+                      <h2>Some of the Features of All-Star Magazine website</h2>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo5" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/All Star/Homepage Slider.png" alt="Los Angeles" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/All Star/Homepage Magazine.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/All Star/Homepage-four-column-layout.png" alt="New York"
+                                class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo5"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo5"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <h3>Homepage</h3>
+                          <ul class="featured-lists">
+                            <li>
+                              <strong>Homepage Slider</strong>
+                              <p>The slider is compose of 5 article slides, a cover story that will run for two weeks
+                                and four featured articles. It was made using Smart Slider 3 and CSS for better styling.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>Featured Video</strong>
+                              <p>This is an embedded YouTube video from our YouTube Channel. Usually it was an interview
+                                video that also run for two weeks.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>4-Column Article Category Section or The Grid Module</strong>
+                              <p>It was compose of four recently uploaded articles sorted by category. The following
+                                categories are Magazine, Featured, Community and News & Updates.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>3-Column Video Section or The Post Video</strong>
+                              <p>This is where recently uploaded videos show and all video came from our YouTube
+                                channel.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+
+                      </div>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo6" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/All Star/Archives featured article.png" alt="Los Angeles"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/All Star/Archives articles.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo6"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo6"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <h3>Archives or Category Pages</h3>
+                          <p>There are five categories that shows different type of articles: Magazine, Featured,
+                            Community, News & Updates and Videos. Each category page or archive page has a featured
+                            article on top which is the recently uploaded article, followed by articles at the bottom.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo7" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="3"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/All Star/Article Featured Image.png" alt="Los Angeles"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/All Star/Article Content.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/All Star/Article Embed Socials.png" alt="Chicago"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/All Star/Article Read More.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo7"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo7"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <h3>Inside Article</h3>
+                          <ul class="featured-lists">
+                            <li>
+                              <strong>Featured Image</strong>
+                              <p>This is the cover image of an article. It shows at the top of an article page.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>Share to Social Media</strong>
+                              <p>You can share the article to social media like in Facebook and Instagram or copy the
+                                link instead. Every article was optimize when shared to social media.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>Embed Social Media Posts/Feeds</strong>
+                              <p>This will allow you to embed posts from Facebook, feeds from Instagram or a tweet from
+                                X.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>Read More Section</strong>
+                              <p>At the bottom of an article there are three recommended articles to read next.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>Auto Load Posts</strong>
+                              <p>After the Read More section, another article will load. If you keep scrolling down more
+                                articles will load.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column maintenance">
+            <a href="#popup4">
+              <div class="content">
+                <img src="./images/Magnolia/magnolia-chicken-cover.png" alt="All Star" class="content-img"
+                  style="width:100%">
+                <h4>Magnolia Chicken</h4>
+                <p>Web Maintenance</p>
+                <div id="popup4" class="overlay popup">
+                  <div class="additional-info">
+                    <a class="close" href="#section">&times;</a>
+                    <div class="info-card">
+                      <img src="./images/Magnolia/magnolia-chicken-cover.png" class="cover-pic" alt="Magnolia">
+                      <div class="info-text">
+                        <h1>Magnolia Chicken</h1>
+                        <p class="role"><b>Role: Web Developer</b></p>
+                        <p>Magnolia Chicken is a food and beverage brand owned by San Miguel Corporation (SMC). SMC is
+                          one of the largest and most diversified conglomerates in the Philippines. I'm responsible for
+                          maintaining and monitoring the Magnolia Chicken website. Updating contents like product page
+                          updates, adding a new slide to the homepage slider, and my most recent update is adding the
+                          NPC DPO/DPS logo to the homepage.
+                        </p>
+                        <ul class="softwares">
+                          <li>
+                            <img src="./images/php.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/css-3.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/filezilla-logo.png" alt="html">
+                          </li>
+                        </ul>
+                        <a href="https://www.google.com/" class="website-links">Click here</a>
+                      </div>
+                    </div>
+                    <div class="more-info">
+                      <h2>Some changes made in Magnolia Chicken website</h2>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo8" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/Magnolia/magchix-products-page.png" alt="Los Angeles"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Magnolia/magnolia-chicken-cover.png" alt="Chicago"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Magnolia/magchix-home-page.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo8"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo8"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <h3>Updating products page, adding new slide to homepage slider & adding NPC DPO/DPS logo</h3>
+                          <p>Magnolia is a Non-WordPress website. In order to make changes to the website I use
+                            FileZilla Server to download the page file to update then upload it back after making
+                            changes.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="column webdev">
+            <a href="#popup5">
+              <div class="content">
+                <img src="./images/RK Ames/rk-ames-website.png" alt="All Star" class="content-img" style="width:100%">
+                <h4>RK Ames Website</h4>
+                <p>Web Development</p>
+                <div id="popup5" class="overlay popup">
+                  <div class="additional-info">
+                    <a class="close" href="#section">&times;</a>
+                    <div class="info-card">
+                      <img src="./images/RK Ames/rk-ames-website.png" class="cover-pic" alt="All Star">
+                      <div class="info-text">
+                        <h1>RK Ames Website</h1>
+                        <p class="role"><b>Role: Web Developer</b></p>
+                        <p>This is our company's website, which is not yet available to the public. Contents, like
+                          images, are not yet final, but the overall construction of the website is almost finished.
+                          Using my skills
+                          In Elementor, CSS3, and JavaScript, I was able to imitate the mockup design and make it
+                          responsive on all devices. You can check its <a
+                            href="https://xd.adobe.com/view/1f1047a3-4b6a-4fc8-ab3b-58590e3cb39b-4a43/"
+                            target="_blank">Mockup design</a> made in Adobe XD.</p>
+                        <ul class="softwares">
+                          <li>
+                            <img src="./images/wordpress-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/elementor.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/js-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/css-3.png" alt="html">
+                          </li>
+                        </ul>
+                        <a href="https://www.google.com/" class="website-links">Click here</a>
+                      </div>
+                    </div>
+                    <div class="info-details">
+                      <div class="info-features">
+                        <h2>Features</h2>
+                        <ul class="feature-lists">
+                          <li>Notable Partnership Slider with Category Tabs</li>
+                          <li>Logo Carousel</li>
+                          <li>C.O.O.L Solution's Card On-Hover Animation</li>
+                          <li>Services and Solutions Vertical Slider</li>
+                          <li>Contact Form</li>
+                        </ul>
+                      </div>
+                      <div class="fonts-colors-used">
+                        <h2>Fonts & Colors Used</h2>
+                        <p>Font: <strong>Avenir Next Lt Pro</strong></p>
+                        <ul class="color-lists">
+                          <li class="color-info">
+                            <p>Primary</p>
+                            <div class="circle primary-color" style="background-color: #FEFAFA;"></div>
+                            <div class="circle primary-color" style="background-color: #E6F4F1;"></div>
+                            <p class="hex">#FEFAFA, #E6F4F1</p>
+                          </li>
+                          <li class="color-info">
+                            <p>Secondary</p>
+                            <div class="circle secondary-color" style="background-color: #00A5D8;"></div>
+                            <p class="hex">#00A5D8</p>
+                          </li>
+                          <li class="color-info">
+                            <p>Tertiary</p>
+                            <div class="circle tertiary-color" style="background-color: #004A8B;"></div>
+                            <p class="hex">#004A8B</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="more-info">
+                      <h2>Here are Some Features of RK Ames Website</h2>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo9" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="3"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/RK Ames/partnership-carousel-tabs.png" alt="Los Angeles"
+                                class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/RK Ames/logo-carousel.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/RK Ames/cool-solutions.png" alt="New York" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/RK Ames/services-vertical-slider.png" alt="New York"
+                                class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo9"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo9"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <!-- <h3>Inside Article</h3> -->
+                          <ul class="featured-lists">
+                            <li>
+                              <strong>Notable Partnership Slider with Category Tabs</strong>
+                              <p>Showcases all businesses and companies whom we work with. You can navigate it through
+                                category tabs and sliders. Visit <a href="https://staging.rkames.com/testimonials/"
+                                  target="_blank">Testimonials</a> page to check the feature.</p>
+                            </li>
+                            <li>
+                              <strong>Logo Carousel</strong>
+                              <p>Showcases all businessess and organizations we have partner with.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>C.O.O.L Solution's Card On-Hover Animation</strong>
+                              <p>Showcases the services and solutions we offer in a playful way with on-hover animation.
+                              </p>
+                            </li>
+                            <li>
+                              <strong>Services Page Vertical Slider</strong>
+                              <p>Showcases the services and solutions offered through vertical slider. Visit <a
+                                  href="https://staging.rkames.com/services/" target="_blank">Services</a> page to check
+                                the feature.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="column maintenance">
+            <a href="#popup6">
+              <div class="content">
+                <img src="./images/Optimal/optimal-incorporated.png" alt="All Star" class="content-img"
+                  style="width:100%">
+                <h4>Optimal Incorporated</h4>
+                <p>Web Development</p>
+                <div id="popup6" class="overlay popup">
+                  <div class="additional-info">
+                    <a class="close" href="#section">&times;</a>
+                    <div class="info-card">
+                      <img src="./images/Optimal/optimal-incorporated.png" class="cover-pic" alt="All Star">
+                      <div class="info-text">
+                        <h1>Optimal Incorporated</h1>
+                        <p class="role"><b>Role: Web Developer</b></p>
+                        <p>A Power Telecommunications and SCADA products and services provider company formed in 1997 to
+                          cater the electrical power industry within The Republic of the Philippines with a range of
+                          cost effective Power Telecommunication and Substation Automation products. This website is
+                          under my supervision by maintaining and updating contents, like uploading their new products
+                          and services and adding new articles to their website. I'm also in charge in fixing technical
+                          issues and updating its theme, plugins, WordPress version and PHP version.</p>
+                        <ul class="softwares">
+                          <li>
+                            <img src="./images/wordpress-logo.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/elementor.png" alt="html">
+                          </li>
+                          <li>
+                            <img src="./images/css-3.png" alt="html">
+                          </li>
+                        </ul>
+                        <a href="https://www.google.com/" class="website-links">Click here</a>
+                      </div>
+                    </div>
+                    <div class="more-info">
+                      <h2>Recent Work Made in Optimal Incorporated Website</h2>
+                      <div class="slides-info">
+                        <!-- Carousel 1 -->
+                        <div id="demo10" class="carousel slide" data-bs-ride="carousel">
+
+                          <!-- Indicators/dots -->
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                          </div>
+
+                          <!-- The slideshow/carousel -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="./images/Optimal/products-page.png" alt="Los Angeles" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="./images/Optimal/news-page.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls/icons -->
+                          <button class="carousel-control-prev" type="button" data-bs-target="#demo10"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#demo10"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
+                        <div class="slides-details">
+                          <!-- <h3>Inside Article</h3> -->
+                          <ul class="featured-lists">
+                            <li>
+                              <strong>Uploaded new products in Products Page</strong>
+                              <p>Recently upload their new products: PRO Series and EX2700 Series.</p>
+                            </li>
+                            <li>
+                              <strong>Added new article to News Page</strong>
+                              <p>The new article was about involvement with the IIEE, Etherwan Systems, Inc. partnered
+                                with Optimal, Inc. to showcase their innovative industrial-grade Ethernet communication
+                                equipment.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <div class="modal-content" id="modalContainer">
+                </div> -->
+
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
