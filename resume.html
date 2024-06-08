@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/resume.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Contact</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <title>Resume</title>
 </head>
+
 <body>
     <div class="main-container">
         <!--First Column-->
@@ -16,7 +20,7 @@
             <div class="top">
                 <img src="./assets/images/profile.jpeg" width="160px" height="160px" alt="profile">
                 <h2 class="name">Joshua Perez</h3>
-                <p class="job">Software Developer</p>
+                    <p class="job">Software Developer</p>
             </div>
             <hr class="partition">
             <div class="middle">
@@ -69,24 +73,52 @@
                 </ul>
             </nav>
             <section class="main-content">
-                <h2 class="page-title">Contact</h2>
-                <div class="contact-form">
-                    <form action="" method="POST" name="contact">
-                        <div class="input-wrapper">
-                            <input type="text" name="fullname" placeholder="Full Name" required>
-                            <input type="email" name="email" placeholder="Email" required>
+                <h2 class="page-title">Resume</h2>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
                         </div>
-                        <textarea name="message" id="message" placeholder="Your message" required></textarea>
-                        <button type="submit">
-                            <ion-icon name="paper-plane" class="send-icon" role="img" aria-label="paper plane">
-                                <img src="./assets/images/send.png" alt="paper plane">
-                            </ion-icon>
-                            <span>Send Message</span>
-                        </button>
-                    </form>
-                </div>
+                        <h3 class="h3">Experience</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Associate Software Developer - RK Ames Business Solutions
+                                Incorporated</h4>
+                            <span>2022 — Present</span>
+                            <p class="timeline-text">
+                                Developing and maintaining websites of some companies here in the Philippines. I also do
+                                some basic SEO reporting by using resources like Semrush, Google Search Console and
+                                Google Analytics.
+                            </p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Graphic Artist - Japa Global Trading</h4>
+                            <span>2019 — 2020</span>
+                            <p class="timeline-text">
+                                Developed creative designs for client's sublimation jersey and shirts using Adobe
+                                Illustrator and Adobe Photoshop.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="h3">Education</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Bachelor of Science in Information Technology</h4>
+                            <span>2015 — 2019</span>
+                        </li>
+                    </ol>
+                </section>
             </section>
         </main>
     </div>
 </body>
+
 </html>
