@@ -145,7 +145,7 @@
     box-shadow: 0 0 0 4px var(--jet);
 }
 
-ion-icon {
+.timeline .icon-box ion-icon[name="book-outline"] {
     color: #7FFFD4;
 }
 
