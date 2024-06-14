@@ -5,6 +5,7 @@
     --bg-gradient-yellow-2: linear-gradient( 135deg, hsla(45, 100%, 71%, 0.251) 0%, hsla(35, 100%, 68%, 0) 59.86% ), hsl(240, 2%, 13%);
     --border-gradient-onyx: linear-gradient( to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50% );
     --text-gradient-yellow: #7FFFD4;
+    --neon-green: #7fffd4;
     --jet: hsl(0, 0%, 22%);
     --onyx: hsl(240, 1%, 17%);
     --eerie-black-1: hsl(240, 2%, 13%);
@@ -153,6 +154,39 @@ ol {
     padding: 0 !important;
 }
 
+.download-resume a {
+    position: relative;
+    width: max-content;
+    background: var(--border-gradient-onyx);
+    color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    gap: 5px;
+    padding: 15px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+    z-index: 1;
+}
+
+.download-resume a::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+    transition: var(--transition-1);
+}
+
+.download-resume a ion-icon {
+    font-size: 20px;
+}
+
 @media (min-width: 768px) {
     .icon-box {
         width: 48px;
@@ -174,5 +208,8 @@ ol {
 @media only screen and (max-width: 768px) {
     .timeline-item::after {
         left: -33px !important;
+    }
+    .download-resume a {
+        margin: 40px auto 15px;
     }
 }

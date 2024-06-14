@@ -161,6 +161,10 @@ ul {
     border-radius: 3px;
 }
 
+.left-panel .middle ul li .contact-details {
+    width: 150px;
+}
+
 .left-panel .middle ul li .contact-details p {
     text-align: left;
 }
@@ -176,6 +180,10 @@ ul {
 .left-panel .middle ul li .contact-details .contact-link {
     color: #D6D6D6;
     text-decoration: none;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .left-panel .middle ul li .contact-details p:nth-child(2) {
@@ -421,6 +429,9 @@ ul {
     .main-panel {
         width: 95%;
         margin: 10px auto 0;
+    }
+    .left-panel .middle ul li .contact-details .contact-link {
+        display: initial;
     }
   } 
 
