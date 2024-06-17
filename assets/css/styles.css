@@ -219,7 +219,7 @@ ul {
 
 .main-panel nav, .mobile-nav {
     /* width: 75%; */
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #2B2B2C;
     color:#FAFAFA;
     /* border-bottom-right-radius: 30px; */
@@ -235,7 +235,7 @@ ul {
 
 .main-panel nav .menu li, .mobile-nav .menu li {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 16px;
 
 }
 
@@ -451,14 +451,16 @@ ul {
         bottom: 0;
         left: 0;
         width: 100%;
+        background: hsla(240, 1%, 17%, 0.75);
         backdrop-filter: blur(10px);
         border: 1px solid var(--jet);
-        border-radius: 10px 10px 0 0;
+        border-radius: 12px 12px 0 0;
+        box-shadow: var(--shadow-2);
         z-index: 999;
     }
     .main-container .mobile-nav .menu {
         justify-content: center;
-        gap: 20px;
+        gap: 25px;
     }
 
     .main-container .mobile-nav .menu li a {
@@ -471,7 +473,7 @@ ul {
     }
 
     .left-panel {
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
 
     .left-panel .middle {
