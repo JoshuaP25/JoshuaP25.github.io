@@ -128,9 +128,15 @@
     line-height: 1.6;
 }
 
-.timeline-text {
+.timeline-tasks .tasks {
+    padding-left: 15px !important;
+}
+
+.timeline-tasks .tasks li {
     color: var(--light-gray);
+    font-size: var(--fs-4) !important;
     font-weight: var(--fw-300);
+    margin: 8px 0;
     line-height: 1.4;
 }
 
