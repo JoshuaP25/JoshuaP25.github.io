@@ -270,14 +270,14 @@ ul {
 }
 
 .additional-info .more-info .slides-info img {
-  width: 100%;
+  width: 60%;
   height: 500px;
   object-fit: contain;
   margin: 20px 0;
 }
 
 .additional-info .more-info .slides-info .slides-details {
-  width: 50%;
+  width: 40%;
 }
 
 .additional-info .more-info .slides-info .slides-details .featured-lists li {
@@ -358,7 +358,12 @@ ul {
 /* Slider */
 
 .slides-info .carousel {
-  width: 50%;
+  width: 60%;
+}
+
+.slides-info .carousel .carousel-control-prev, .slides-info .carousel .carousel-control-next {
+  color:#1E1E1F;
+  font-size: 50px;
 }
 
 /* Portfolio Image Grid */
